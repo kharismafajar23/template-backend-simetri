@@ -1,0 +1,24 @@
+{
+  "name": "template-simetri",
+  "version": "1.0.0",
+  "description": "Template Admin Simetri",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx @tailwindcss/cli -i ./assets/styles/custom.css -o ./assets/styles/output.css --watch",
+    "esbuild": "npx esbuild ./assets/scripts/custom.js --bundle --outfile=./assets/scripts/main.js --watch",
+    "dev": "concurrently \"npm run tailwind\" \"npm run esbuild\"",
+    "build:css": "npx @tailwindcss/cli -i ./assets/styles/custom.css -o ./assets/styles/output.css",
+    "build:js": "npx esbuild ./assets/scripts/custom.js --bundle --outfile=./assets/scripts/main.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "author": "Kharisma Fajar",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "alpinejs": "^3.15.0",
+    "flyonui": "^2.4.0",
+    "tailwindcss": "^4.1.13",
+    "concurrently": "^9.0.0"
+  }
+}
