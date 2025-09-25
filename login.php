@@ -93,7 +93,7 @@
                                             class="p-2 text-gray-400 bg-white dark:bg-gray-900 sm:px-5 sm:py-2">Or</span>
                                     </div>
                                 </div>
-                                <form>
+                                <form action="./auth.php" method="POST" autocomplete="off" novalidate="">
                                     <div class="space-y-5">
                                         <!-- Email -->
                                         <div>
@@ -102,10 +102,10 @@
                                                 Email<span class="text-error-500">*</span>
                                             </label>
                                             <input
-                                                type="email"
-                                                id="email"
-                                                name="email"
-                                                placeholder="info@gmail.com"
+                                                type="text"
+                                                id="username"
+                                                name="username"
+                                                placeholder="Enter your username"
                                                 class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800" />
                                         </div>
                                         <!-- Password -->
@@ -118,6 +118,7 @@
                                                 <input
                                                     :type="showPassword ? 'text' : 'password'"
                                                     placeholder="Enter your password"
+                                                    name="password"
                                                     class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800" />
                                                 <span
                                                     @click="showPassword = !showPassword"
@@ -189,12 +190,13 @@
                                                 </label>
                                             </div>
                                             <a
-                                                href="/reset-password.html"
+                                                href="#"
                                                 class="text-sm text-brand-500 hover:text-brand-600 dark:text-brand-400">Forgot password?</a>
                                         </div>
                                         <!-- Button -->
                                         <div>
                                             <button
+                                                type="submit"
                                                 class="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600">
                                                 Sign In
                                             </button>
@@ -206,7 +208,7 @@
                                         class="text-sm font-normal text-center text-gray-700 dark:text-gray-400 sm:text-start">
                                         Don't have an account?
                                         <a
-                                            href="/signup.html"
+                                            href="./signup.php"
                                             class="text-brand-500 hover:text-brand-600 dark:text-brand-400">Sign Up</a>
                                     </p>
                                 </div>
@@ -222,7 +224,7 @@
                         <include src="./partials/common-grid-shape.html"></include>
                         <div class="flex flex-col items-center max-w-xs">
                             <a href="index.html" class="block mb-4">
-                                <img src="./images/logo/auth-logo.svg" alt="Logo" />
+                                <img src="./assets/images/logo/auth-logo.svg" alt="Logo" />
                             </a>
                             <p class="text-center text-gray-400 dark:text-white/60">
                                 Free and Open-Source Tailwind CSS Admin Dashboard Template
