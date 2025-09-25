@@ -740,3 +740,12 @@ span.flatpickr-weekday,
   opacity: 0.8;
   cursor: grabbing; /* Changes the cursor to indicate dragging */
 }
+
+
+.card{
+  @apply rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6;
+}
+
+.card-title{
+  @apply text-lg font-semibold text-gray-800 dark:text-white/90;
+}
