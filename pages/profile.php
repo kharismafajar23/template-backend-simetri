@@ -1,4 +1,4 @@
-<main x-data="{'isProfileInfoModal': false, 'isProfileAddressModal': false}">
+<main x-data="{page : 'Profile', breadcrumbs : ['Home', 'Profile'], 'isProfileInfoModal': false, 'isProfileAddressModal': false}">
     <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">
         <!-- Breadcrumb Start -->
         <div x-data="{ pageName: `Profile`}">
@@ -21,7 +21,7 @@
                         class="flex flex-col items-center w-full gap-6 xl:flex-row">
                         <div
                             class="w-20 h-20 overflow-hidden border border-gray-200 rounded-full dark:border-gray-800">
-                            <img src="./images/user/owner.jpg" alt="user" />
+                            <img src="./assets/images/user/owner.jpg" alt="user" />
                         </div>
                         <div class="order-3 xl:order-2">
                             <h4
@@ -297,6 +297,6 @@
 
     <!-- BEGIN MODAL -->
     <?php include './pages/partials/profile/profile-info-modal.php' ?>
-    <include src="./partials/profile/profile-address-modal.html" />
+    <?php include './pages/partials/profile/profile-address-modal.php' ?>
     <!-- END MODAL -->
 </main>

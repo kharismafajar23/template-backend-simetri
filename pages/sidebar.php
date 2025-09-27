@@ -58,10 +58,11 @@
                     <li>
                         <a
                             href="?page=dashboard"
+                            @click="selected = (selected === 'Dashboard' ? '':'Dashboard')"
                             class="menu-item group"
-                            :class=" (selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics' || page === 'marketing' || page === 'crm' || page === 'stocks') ? 'menu-item-active' : 'menu-item-inactive'">
+                            :class=" (selected === 'Dashboard') || (page === 'Dashboard') ? 'menu-item-active' : 'menu-item-inactive'">
                             <svg
-                                :class="(selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics' || page === 'marketing' || page === 'crm' || page === 'stocks') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
+                                :class="(selected === 'Dashboard') || (page === 'Dashboard') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -87,12 +88,12 @@
                     <!-- Menu Item Calendar -->
                     <li>
                         <a
-                            href="calendar.html"
+                            href="?page=calendar"
                             @click="selected = (selected === 'Calendar' ? '':'Calendar')"
                             class="menu-item group"
-                            :class=" (selected === 'Calendar') && (page === 'calendar') ? 'menu-item-active' : 'menu-item-inactive'">
+                            :class=" (selected === 'Calendar') && (page === 'Calendar') ? 'menu-item-active' : 'menu-item-inactive'">
                             <svg
-                                :class="(selected === 'Calendar') && (page === 'calendar') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
+                                :class="(selected === 'Calendar') && (page === 'Calendar') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
