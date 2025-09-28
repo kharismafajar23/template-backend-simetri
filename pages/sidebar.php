@@ -263,7 +263,7 @@
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
                                     <a
-                                        href="basic-tables.html"
+                                        href="?page=basic-tables"
                                         class="menu-dropdown-item group"
                                         :class="page === 'basicTables' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Basic Tables
@@ -328,7 +328,7 @@
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
                                     <a
-                                        href="blank.html"
+                                        href="?page=blank"
                                         class="menu-dropdown-item group"
                                         :class="page === 'blank' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Blank Page
@@ -336,7 +336,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="404.html"
+                                        href="?page=404"
                                         class="menu-dropdown-item group"
                                         :class="page === 'page404' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         404 Error
