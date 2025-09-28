@@ -198,7 +198,7 @@
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
                                     <a
-                                        href="form-elements.html"
+                                        href="?page=form-elements"
                                         class="menu-dropdown-item group"
                                         :class="page === 'formElements' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Form Elements
