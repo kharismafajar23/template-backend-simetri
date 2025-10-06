@@ -143,18 +143,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'stocks' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Stocks
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'stocks' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                New
-                                            </span>
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'stocks' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                             </ul>
