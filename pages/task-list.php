@@ -1,4 +1,4 @@
-<main data-halaman-aktif="taskList" x-data="{breadcrumbs: ['Task', 'List']}">
+<main data-halaman-aktif="taskList" x-data="{pageName: `Task List`, breadcrumbs: ['Task', 'List'], 'isTaskModalModal': false}">
   <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">
     <!-- Breadcrumb Start -->
     <div>
@@ -10,7 +10,7 @@
       x-data="{selectedTaskGroup: 'All'}"
       class="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
       <!-- Task header Start -->
-      <include src="./partials/task/task-header.html" />
+      <?php include './pages/partials/task/task-header.php' ?>
       <!-- Task header End -->
 
       <!-- Task wrapper Start -->
@@ -1443,4 +1443,9 @@
       <!-- Task wrapper End -->
     </div>
   </div>
+
+  <!-- BEGIN MODAL -->
+  <?php include './pages/partials/task/task-add-modal.php' ?>
+  <!-- END MODAL -->
+
 </main>
