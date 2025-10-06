@@ -750,6 +750,10 @@ span.flatpickr-weekday,
   @apply px-5 py-4 sm:px-6 sm:py-5 border-b border-gray-100 dark:border-gray-800;
 }
 
+.card-body{
+  @apply p-5 space-y-6 border-t border-gray-100 dark:border-gray-800 sm:p-6;
+}
+
 .card-title{
   @apply text-lg font-semibold text-gray-800 dark:text-white/90;
 }

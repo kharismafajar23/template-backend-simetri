@@ -1,7 +1,7 @@
-<main x-data="{'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }">
+<main data-halaman-aktif="formElements" x-data="{pageName: `Form Elements`, breadcrumbs : ['Form', 'Form Elements']}">
     <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
         <!-- Breadcrumb Start -->
-        <div x-data="{ pageName: `Form Elements`, breadcrumbs: ['Home', 'Form Elements']}">
+        <div>
             <?php include './pages/partials/breadcrumb.php' ?>
         </div>
         <!-- Breadcrumb End -->
@@ -152,8 +152,7 @@
                                 <input
                                     type="date"
                                     placeholder="Select date"
-                                    class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 pr-11 pl-4 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30"
-                                    onclick="this.showPicker()" />
+                                    class="dark:bg-dark-900 datepickerTwo shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full appearance-none rounded-lg border border-gray-300 bg-transparent bg-none px-4 py-2.5 pr-11 pl-4 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                                 <span
                                     class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-gray-500 dark:text-gray-400">
                                     <svg
@@ -767,7 +766,7 @@
                                     placeholder="+1 (555) 000-0000"
                                     x-model="phoneNumber"
                                     type="tel"
-                                    class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-3 pr-[84px] pl-3 text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
+                                    class="dark:bg-dark-900 shadow-theme-xs focus:border-brand-300 focus:ring-brand-500/10 dark:focus:border-brand-800 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-3 pr-[84px] text-sm text-gray-800 placeholder:text-gray-400 focus:ring-3 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30" />
                             </div>
                         </div>
 
@@ -1142,7 +1141,8 @@
                                             class="sr-only"
                                             @change="switcherToggle = !switcherToggle" />
                                         <div
-                                            class="block h-6 w-11 rounded-full bg-gray-700 dark:bg-white/10"></div>
+                                            class="block h-6 w-11 rounded-full"
+                                            :class="switcherToggle ? 'bg-gray-700 dark:bg-white/10' : 'bg-gray-200 dark:bg-gray-800'"></div>
                                         <div
                                             :class="switcherToggle ? 'translate-x-full': 'translate-x-0'"
                                             class="shadow-theme-sm absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white duration-300 ease-linear"></div>
@@ -1162,8 +1162,10 @@
                                             id="toggle22"
                                             class="sr-only"
                                             @change="switcherToggle = !switcherToggle" />
+
                                         <div
-                                            class="block h-6 w-11 rounded-full bg-gray-700 dark:bg-white/10"></div>
+                                            class="block h-6 w-11 rounded-full"
+                                            :class="switcherToggle ? 'bg-gray-700 dark:bg-white/10' : 'bg-gray-200 dark:bg-gray-800'"></div>
                                         <div
                                             :class="switcherToggle ? 'translate-x-full': 'translate-x-0'"
                                             class="shadow-theme-sm absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white duration-300 ease-linear"></div>
@@ -1185,7 +1187,8 @@
                                             @change="switcherToggle = !switcherToggle"
                                             disabled />
                                         <div
-                                            class="block h-6 w-11 rounded-full bg-gray-100 dark:bg-gray-800"></div>
+                                            class="block h-6 w-11 rounded-full"
+                                            :class="switcherToggle ? 'bg-gray-700 dark:bg-white/10' : 'bg-gray-100 dark:bg-gray-800'"></div>
                                         <div
                                             :class="switcherToggle ? 'translate-x-full': 'translate-x-0'"
                                             class="shadow-theme-sm absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-gray-50 duration-300 ease-linear"></div>
@@ -1234,7 +1237,7 @@
 
                                 <h4
                                     class="text-theme-xl mb-3 font-semibold text-gray-800 dark:text-white/90">
-                                    Drop File Here
+                                    Drag & Drop File Here
                                 </h4>
                                 <span
                                     class="mx-auto mb-5 block w-full max-w-[290px] text-sm text-gray-700 dark:text-gray-400">
@@ -1255,3 +1258,52 @@
         <!-- ====== Form Elements Section End -->
     </div>
 </main>
+
+<script>
+    function dropdown() {
+        return {
+            options: [],
+            selected: [],
+            show: false,
+            open() {
+                this.show = true;
+            },
+            close() {
+                this.show = false;
+            },
+            isOpen() {
+                return this.show === true;
+            },
+            select(index, event) {
+                if (!this.options[index].selected) {
+                    this.options[index].selected = true;
+                    this.options[index].element = event.target;
+                    this.selected.push(index);
+                } else {
+                    this.selected.splice(this.selected.lastIndexOf(index), 1);
+                    this.options[index].selected = false;
+                }
+            },
+            remove(index, option) {
+                this.options[option].selected = false;
+                this.selected.splice(index, 1);
+            },
+            loadOptions() {
+                const options = document.getElementById("select").options;
+                for (let i = 0; i < options.length; i++) {
+                    this.options.push({
+                        value: options[i].value,
+                        text: options[i].innerText,
+                        selected: options[i].getAttribute("selected") != null ?
+                            options[i].getAttribute("selected") : false,
+                    });
+                }
+            },
+            selectedValues() {
+                return this.selected.map((option) => {
+                    return this.options[option].value;
+                });
+            },
+        };
+    }
+</script>

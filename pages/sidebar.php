@@ -343,6 +343,14 @@
                                         Form Elements
                                     </a>
                                 </li>
+                                <li>
+                                    <a
+                                        href="?page=form-layout"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'formLayout' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Form Layout
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <!-- Dropdown Menu End -->
