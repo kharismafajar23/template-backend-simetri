@@ -127,13 +127,6 @@
                                         href="?page=marketing"
                                         :class="page === 'marketing' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Marketing
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'marketing' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>

@@ -833,6 +833,9 @@
   .w-\[46px\] {
     width: 46px;
   }
+  .w-\[48\%\] {
+    width: 48%;
+  }
   .w-\[50px\] {
     width: 50px;
   }
@@ -925,6 +928,9 @@
   }
   .max-w-\[140px\] {
     max-width: 140px;
+  }
+  .max-w-\[150px\] {
+    max-width: 150px;
   }
   .max-w-\[242px\] {
     max-width: 242px;
@@ -1810,6 +1816,9 @@
   }
   .pr-\[90px\] {
     padding-right: 90px;
+  }
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
@@ -3021,6 +3030,11 @@
       order: 3;
     }
   }
+  .xl\:col-span-4 {
+    @media (width >= 1280px) {
+      grid-column: span 4 / span 4;
+    }
+  }
   .xl\:col-span-5 {
     @media (width >= 1280px) {
       grid-column: span 5 / span 5;
@@ -3029,6 +3043,11 @@
   .xl\:col-span-7 {
     @media (width >= 1280px) {
       grid-column: span 7 / span 7;
+    }
+  }
+  .xl\:col-span-8 {
+    @media (width >= 1280px) {
+      grid-column: span 8 / span 8;
     }
   }
   .xl\:block {
@@ -3417,6 +3436,11 @@
   .dark\:text-error-500 {
     &:is(.dark *) {
       color: var(--color-error-500);
+    }
+  }
+  .dark\:text-gray-300 {
+    &:is(.dark *) {
+      color: var(--color-gray-300);
     }
   }
   .dark\:text-gray-400 {
