@@ -1,19 +1,19 @@
 import ApexCharts from "apexcharts";
 
-// ===== chartOne
-const chart01 = () => {
-  const chartOneOptions = {
+// ===== chartFifteen
+const chart18 = () => {
+  const chartEighteenOptions = {
     series: [
       {
         name: "Sales",
-        data: [168, 385, 201, 298, 187, 195, 291, 110, 215, 390, 280, 112],
+        data: [168, 385, 201, 298, 187, 195, 180],
       },
     ],
     colors: ["#465fff"],
     chart: {
       fontFamily: "Outfit, sans-serif",
       type: "bar",
-      height: 180,
+      height: 200,
       toolbar: {
         show: false,
       },
@@ -21,8 +21,8 @@ const chart01 = () => {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: "39%",
-        borderRadius: 5,
+        columnWidth: "52%",
+        borderRadius: 8,
         borderRadiusApplication: "end",
       },
     },
@@ -35,20 +35,7 @@ const chart01 = () => {
       colors: ["transparent"],
     },
     xaxis: {
-      categories: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+      categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       axisBorder: {
         show: false,
       },
@@ -91,15 +78,15 @@ const chart01 = () => {
     },
   };
 
-  const chartSelector = document.querySelectorAll("#chartOne");
+  const chartSelector = document.querySelectorAll("#chartEighteen");
 
   if (chartSelector.length) {
-    const chartFour = new ApexCharts(
-      document.querySelector("#chartOne"),
-      chartOneOptions,
+    const chartEighteen = new ApexCharts(
+      document.querySelector("#chartEighteen"),
+      chartEighteenOptions,
     );
-    chartFour.render();
+    chartEighteen.render();
   }
 };
 
-export default chart01;
+export default chart18;

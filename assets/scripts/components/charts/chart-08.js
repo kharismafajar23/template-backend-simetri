@@ -1,8 +1,8 @@
 import ApexCharts from "apexcharts";
 
 // ===== chartThree
-const chart03 = () => {
-  const chartThreeOptions = {
+const chart08 = () => {
+  const chartEightOptions = {
     series: [
       {
         name: "Sales",
@@ -35,9 +35,10 @@ const chart03 = () => {
       },
     },
     stroke: {
-      curve: "straight",
+      curve: "smooth",
       width: ["2", "2"],
     },
+
     markers: {
       size: 0,
     },
@@ -98,15 +99,15 @@ const chart03 = () => {
     },
   };
 
-  const chartSelector = document.querySelectorAll("#chartThree");
+  const chartSelector = document.querySelectorAll("#chartEight");
 
   if (chartSelector.length) {
-    const chartThree = new ApexCharts(
-      document.querySelector("#chartThree"),
-      chartThreeOptions,
+    const chartEight = new ApexCharts(
+      document.querySelector("#chartEight"),
+      chartEightOptions,
     );
-    chartThree.render();
+    chartEight.render();
   }
 };
 
-export default chart03;
+export default chart08;

@@ -57,12 +57,12 @@
                     <!-- Menu Item Dashboard -->
                     <li>
                         <a
-                            href="?page=dashboard"
-                            @click="selected = (selected === 'Dashboard' ? '':'Dashboard')"
+                            href="#"
+                            @click.prevent="selected = (selected === 'Dashboard' ? '':'Dashboard')"
                             class="menu-item group"
-                            :class=" (selected === 'Dashboard') || (page === 'Dashboard') ? 'menu-item-active' : 'menu-item-inactive'">
+                            :class=" (selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics' || page === 'marketing' || page === 'crm' || page === 'stocks') ? 'menu-item-active' : 'menu-item-inactive'">
                             <svg
-                                :class="(selected === 'Dashboard') || (page === 'Dashboard') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
+                                :class="(selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics' || page === 'marketing' || page === 'crm' || page === 'stocks') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -80,9 +80,101 @@
                                 :class="sidebarToggle ? 'lg:hidden' : ''">
                                 Dashboard
                             </span>
-                        </a>
-                    </li>
 
+                            <svg
+                                class="menu-item-arrow"
+                                :class="[(selected === 'Dashboard') ? 'menu-item-arrow-active' : 'menu-item-arrow-inactive', sidebarToggle ? 'lg:hidden' : '' ]"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.79175 7.39584L10.0001 12.6042L15.2084 7.39585"
+                                    stroke=""
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown Menu Start -->
+                        <div
+                            class="overflow-hidden transform translate"
+                            :class="(selected === 'Dashboard') ? 'block' :'hidden'">
+                            <ul
+                                :class="sidebarToggle ? 'lg:hidden' : 'flex'"
+                                class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
+                                <li>
+                                    <a
+                                        href="?page=dashboard"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'ecommerce' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        eCommerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=analytics"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'analytics' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Analytics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="menu-dropdown-item group"
+                                        href="?page=marketing"
+                                        :class="page === 'marketing' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Marketing
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'marketing' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=crm"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'crm' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        CRM
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'crm' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=stocks"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'stocks' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Stocks
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'stocks' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                New
+                                            </span>
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'stocks' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Dropdown Menu End -->
+                    </li>
                     <!-- Menu Item Dashboard -->
 
                     <!-- Menu Item Calendar -->

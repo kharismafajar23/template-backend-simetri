@@ -1,19 +1,19 @@
 import ApexCharts from "apexcharts";
 
-// ===== chartOne
-const chart01 = () => {
-  const chartOneOptions = {
+// ===== chartFifteen
+const chart15 = () => {
+  const chartFifteenOptions = {
     series: [
       {
         name: "Sales",
-        data: [168, 385, 201, 298, 187, 195, 291, 110, 215, 390, 280, 112],
+        data: [168, 385, 201, 298, 187, 195],
       },
     ],
     colors: ["#465fff"],
     chart: {
       fontFamily: "Outfit, sans-serif",
       type: "bar",
-      height: 180,
+      height: 200,
       toolbar: {
         show: false,
       },
@@ -35,20 +35,7 @@ const chart01 = () => {
       colors: ["transparent"],
     },
     xaxis: {
-      categories: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
       axisBorder: {
         show: false,
       },
@@ -91,15 +78,15 @@ const chart01 = () => {
     },
   };
 
-  const chartSelector = document.querySelectorAll("#chartOne");
+  const chartSelector = document.querySelectorAll("#chartFifteen");
 
   if (chartSelector.length) {
-    const chartFour = new ApexCharts(
-      document.querySelector("#chartOne"),
-      chartOneOptions,
+    const chartFifteen = new ApexCharts(
+      document.querySelector("#chartFifteen"),
+      chartFifteenOptions,
     );
-    chartFour.render();
+    chartFifteen.render();
   }
 };
 
-export default chart01;
+export default chart15;

@@ -1,8 +1,8 @@
 import ApexCharts from "apexcharts";
 
 // ===== chartThree
-const chart03 = () => {
-  const chartThreeOptions = {
+const chart11 = () => {
+  const chartElevenOptions = {
     series: [
       {
         name: "Sales",
@@ -21,7 +21,7 @@ const chart03 = () => {
     colors: ["#465FFF", "#9CB9FF"],
     chart: {
       fontFamily: "Outfit, sans-serif",
-      height: 310,
+      height: 220,
       type: "area",
       toolbar: {
         show: false,
@@ -34,10 +34,37 @@ const chart03 = () => {
         opacityTo: 0,
       },
     },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 220,
+          },
+        },
+      },
+      {
+        breakpoint: 1600,
+        options: {
+          chart: {
+            height: 220,
+          },
+        },
+      },
+      {
+        breakpoint: 2600,
+        options: {
+          chart: {
+            height: 250,
+          },
+        },
+      },
+    ],
     stroke: {
       curve: "straight",
       width: ["2", "2"],
     },
+
     markers: {
       size: 0,
     },
@@ -98,15 +125,15 @@ const chart03 = () => {
     },
   };
 
-  const chartSelector = document.querySelectorAll("#chartThree");
+  const chartSelector = document.querySelectorAll("#chartEleven");
 
   if (chartSelector.length) {
-    const chartThree = new ApexCharts(
-      document.querySelector("#chartThree"),
-      chartThreeOptions,
+    const chartEleven = new ApexCharts(
+      document.querySelector("#chartEleven"),
+      chartElevenOptions,
     );
-    chartThree.render();
+    chartEleven.render();
   }
 };
 
-export default chart03;
+export default chart11;
