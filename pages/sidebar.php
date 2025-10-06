@@ -416,6 +416,14 @@
                                         Basic Tables
                                     </a>
                                 </li>
+                                <li>
+                                    <a
+                                        href="?page=data-tables"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'dataTables' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Data Tables
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <!-- Dropdown Menu End -->
