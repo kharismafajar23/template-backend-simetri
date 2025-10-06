@@ -135,13 +135,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'crm' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         CRM
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'crm' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
