@@ -39637,6 +39637,11 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
   // assets/scripts/custom.js
   module_default.plugin(module_default2);
   window.Alpine = module_default;
+  document.addEventListener("alpine:init", () => {
+    const main = document.querySelector("main[data-halaman-aktif]");
+    const halamanAktif = main?.dataset.halamanAktif || "Dashboard";
+    module_default.store("dataHalaman", { page: `${halamanAktif}` });
+  });
   module_default.start();
   esm_default(".datepicker", {
     mode: "range",
@@ -39773,6 +39778,13 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
         event2.preventDefault();
         focusSearchInput();
       }
+    });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const halaman = document.querySelector("main").getAttribute("data-halaman-aktif");
+    console.log(halaman);
+    module_default.nextTick(() => {
+      const el = document.querySelector("[x-data]");
     });
   });
 })();

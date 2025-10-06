@@ -42,6 +42,16 @@ import "./components/image-resize";
 
 Alpine.plugin(persist);
 window.Alpine = Alpine;
+
+// Inisiasi data halaman
+document.addEventListener("alpine:init", () => {
+  const main = document.querySelector("main[data-halaman-aktif]");
+  const halamanAktif = main?.dataset.halamanAktif || "Dashboard"; // default
+
+  // Ganti x-data di body
+  Alpine.store("dataHalaman", { page: `${halamanAktif}` });
+});
+
 Alpine.start();
 
 // Init flatpickr
@@ -232,5 +242,13 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault(); // Prevent the "/" character from being typed
       focusSearchInput();
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const halaman = document.querySelector('main').getAttribute("data-halaman-aktif");
+  console.log(halaman)
+  Alpine.nextTick(() => {
+    const el = document.querySelector("[x-data]");
   });
 });

@@ -1,4 +1,4 @@
-<main x-data="{page : 'Profile', breadcrumbs : ['Home', 'Profile'], 'isProfileInfoModal': false, 'isProfileAddressModal': false}">
+<main data-halaman-aktif="profile" x-data="{breadcrumbs : ['Home', 'Profile'], 'isProfileInfoModal': false, 'isProfileAddressModal': false}">
     <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">
         <!-- Breadcrumb Start -->
         <div x-data="{ pageName: `Profile`}">

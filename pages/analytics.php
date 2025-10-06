@@ -1,4 +1,4 @@
-<main sata-menu-aktif="Dashboard" data-submenu-aktif="Analytics">
+<main data-halaman-aktif="analytics">
     <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
         <div class="grid grid-cols-12 gap-4 md:gap-6">
             <div class="col-span-12">

@@ -1,4 +1,4 @@
-<div
+<main data-halaman-aktif="blank"
     class="relative z-1 flex min-h-screen flex-col items-center justify-center overflow-hidden p-6">
     <!-- ===== Common Grid Shape Start ===== -->
     <?php include './pages/partials/common-grid-shape.php' ?>
@@ -33,4 +33,4 @@
         class="absolute bottom-6 left-1/2 -translate-x-1/2 text-center text-sm text-gray-500 dark:text-gray-400">
         &copy; <span id="year"></span> - TailAdmin
     </p>
-</div>
+</main>

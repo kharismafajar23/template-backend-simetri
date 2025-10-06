@@ -1,4 +1,4 @@
-<main x-data="{ page: 'Dashboard', breadcrumbs: ['Dashboard'] }">
+<main data-halaman-aktif="ecommerce" x-data="{breadcrumbs: ['Dashboard'] }">
     <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">
         <!-- Accordion -->
         <!-- <div class="card mb-3">
