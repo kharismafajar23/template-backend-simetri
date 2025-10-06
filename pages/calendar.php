@@ -1,7 +1,7 @@
-<main x-data="{page: 'Calendar', breadcrumbs: ['Home', 'Calendar']}">
+<main x-data="{breadcrumbs: ['Home', 'Calendar']}" x-init="$root.page = 'Calendar'">
     <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
         <!-- Breadcrumb Start -->
-        <div x-data="{ pageName: `Calendar`}">
+        <div x-data="$root.page = 'Calendar'">
             <?php include './pages/partials/breadcrumb.php' ?>
         </div>
         <!-- Breadcrumb End -->
