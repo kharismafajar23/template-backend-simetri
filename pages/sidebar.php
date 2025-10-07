@@ -491,22 +491,15 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="pricing-tables.html"
+                                        href="?page=pricing-tables"
                                         class="menu-dropdown-item group"
                                         :class="page === 'pricingTables' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Pricing Tables
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'pricingTables' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="faq.html"
+                                        href="?page=faq"
                                         class="menu-dropdown-item group"
                                         :class="page === 'faq' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Faq's

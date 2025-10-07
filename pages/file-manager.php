@@ -1,4 +1,4 @@
-<main data-halaman-aktif="fileManager" x-data="{pageName: `File Manager`, breadcrumbs : ['Home', 'Profile']}">
+<main data-halaman-aktif="fileManager" x-data="{pageName: `File Manager`, breadcrumbs : ['Pages', 'File Manager']}">
     <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">
         <!-- Breadcrumb Start -->
         <div>
