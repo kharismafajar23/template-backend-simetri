@@ -1,23 +1,23 @@
-<main data-halaman-aktif="page500"
-    class="relative flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden z-1">
+<main data-halaman-aktif="page503"
+    class="relative z-1 flex min-h-screen flex-col items-center justify-center overflow-hidden p-6">
     <!-- ===== Common Grid Shape Start ===== -->
     <?php include './pages/partials/common-grid-shape.php' ?>
     <!-- ===== Common Grid Shape End ===== -->
 
-    <div class="mx-auto w-full max-w-[242px] text-center sm:max-w-[562px]">
+    <div class="mx-auto w-full max-w-[242px] text-center sm:max-w-[492px]">
         <h1
-            class="mb-8 font-bold text-gray-800 text-title-md dark:text-white/90 xl:text-title-2xl">
+            class="mb-8 text-title-md font-bold text-gray-800 dark:text-white/90 xl:text-title-2xl">
             ERROR
         </h1>
 
-        <img src="./assets/images/error/500.svg" alt="500" class="dark:hidden" />
+        <img src="./assets/images/error/503.svg" alt="503" class="dark:hidden" />
         <img
-            src="./assets/images/error/500-dark.svg"
-            alt="500"
+            src="./assets/images/error/503-dark.svg"
+            alt="503"
             class="hidden dark:block" />
 
         <p
-            class="mt-10 mb-6 text-base text-gray-700 dark:text-gray-400 sm:text-lg">
+            class="mb-6 mt-10 text-base text-gray-700 dark:text-gray-400 sm:text-lg">
             We can’t seem to find the page you are looking for!
         </p>
 
@@ -30,7 +30,7 @@
 
     <!-- Footer -->
     <p
-        class="absolute text-sm text-center text-gray-500 -translate-x-1/2 bottom-6 left-1/2 dark:text-gray-400">
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-center text-sm text-gray-500 dark:text-gray-400">
         &copy; <span id="year"></span> - TailAdmin
     </p>
 </main>
