@@ -1,7 +1,7 @@
-<main x-data="{ page: 'blank', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }">
+<main data-halaman-aktif="blank" x-data="{ pageName: `Blank Page`}">
     <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
         <!-- Breadcrumb Start -->
-        <div x-data="{ pageName: `Blank Page`, breadcrumbs: '['Home', 'Blank']'}">
+        <div>
             <?php include './pages/partials/breadcrumb.php' ?>
         </div>
         <!-- Breadcrumb End -->

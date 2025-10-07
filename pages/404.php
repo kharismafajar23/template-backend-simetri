@@ -1,4 +1,4 @@
-<main data-halaman-aktif="blank"
+<main data-halaman-aktif="page404"
     class="relative z-1 flex min-h-screen flex-col items-center justify-center overflow-hidden p-6">
     <!-- ===== Common Grid Shape Start ===== -->
     <?php include './pages/partials/common-grid-shape.php' ?>

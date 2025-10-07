@@ -483,6 +483,44 @@
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
                                     <a
+                                        href="?page=file-manager"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'fileManager' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        File Manager
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="pricing-tables.html"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'pricingTables' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Pricing Tables
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'pricingTables' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="faq.html"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'faq' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Faq's
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'faq' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
                                         href="?page=blank"
                                         class="menu-dropdown-item group"
                                         :class="page === 'blank' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
