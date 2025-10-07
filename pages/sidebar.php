@@ -521,6 +521,74 @@
                                         404 Error
                                     </a>
                                 </li>
+                                <li>
+                                    <a
+                                        href="?page=500"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'page500' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        500 Error
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=503"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'page503' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        503 Error
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'page503' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=coming-soon"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'comingSoon' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Coming Soon
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'comingSoon' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=maintenance"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'termsCondition' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Maintenance
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'termsCondition' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=success"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'success' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Success
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'success' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <!-- Dropdown Menu End -->
