@@ -1,4 +1,4 @@
-<main data-halaman-aktif="pricingTables" x-data="{pageName: `Pricing Tables`, breadcrumbs : ['Pages', 'Pricing Tables']}">
+<main data-halaman-aktif="faq" x-data="{pageName: `Faq’s`, breadcrumbs : ['Pages', 'Faq’s']}">
     <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
         <!-- Breadcrumb Start -->
         <div>
@@ -8,50 +8,50 @@
 
         <div class="space-y-5 sm:space-y-6">
             <div
-                class="card">
+                class="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
                 <div class="card-header">
                     <h3
                         class="text-base font-medium text-gray-800 dark:text-white/90">
-                        Pricing Table 1
+                        Faq’s 1
                     </h3>
                 </div>
                 <div
                     class="card-body">
-                    <!-- ====== Pricing Table One Start -->
-                    <?php include './pages/partials/pricing-table/pricing-table-01.php' ?>
-                    <!-- ====== Pricing Table One End -->
+                    <!-- ====== FAQ One Start -->
+                    <?php include './pages/partials/faq/faq-item-01.php' ?>
+                    <!-- ====== FAQ One End -->
                 </div>
             </div>
 
             <div
-                class="card">
+                class="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
                 <div class="card-header">
                     <h3
                         class="text-base font-medium text-gray-800 dark:text-white/90">
-                        Pricing Table 2
+                        Faq’s 2
                     </h3>
                 </div>
                 <div
                     class="card-body">
-                    <!-- Pricing Table Two -->
-                    <?php include './pages/partials/pricing-table/pricing-table-02.php' ?>
-                    <!-- Pricing Table Two -->
+                    <!-- FAQ Two -->
+                    <?php include './pages/partials/faq/faq-item-02.php' ?>
+                    <!-- FAQ Two -->
                 </div>
             </div>
 
             <div
-                class="card">
+                class="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
                 <div class="card-header">
                     <h3
                         class="text-base font-medium text-gray-800 dark:text-white/90">
-                        Pricing Table 3
+                        Faq’s 3
                     </h3>
                 </div>
                 <div
-                    class="card-body">
-                    <!-- Pricing Table Three -->
-                    <?php include './pages/partials/pricing-table/pricing-table-03.php' ?>
-                    <!-- Pricing Table Three -->
+                    class="border-t border-gray-100 p-5 dark:border-gray-800 sm:p-6 xl:p-10">
+                    <!-- FAQ Three -->
+                    <?php include './pages/partials/faq/faq-item-03.php' ?>
+                    <!-- FAQ Three -->
                 </div>
             </div>
         </div>
