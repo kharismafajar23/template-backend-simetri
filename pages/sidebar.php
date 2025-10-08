@@ -6,20 +6,20 @@
         :class="sidebarToggle ? 'justify-center' : 'justify-between'"
         class="flex items-center gap-2 pt-8 sidebar-header pb-7">
         <a href="?page=dashboard" class="w-full">
-            <h1 class="flex items-center justify-center p-3 font-medium text-white rounded-lg bg-brand-500 text-theme-sm hover:bg-brand-600 w-full">Template Simetri</h1>
-            <!-- <span class="logo" :class="sidebarToggle ? 'hidden' : ''">
-                <img class="dark:hidden" src="./assets/images/logo/logo.svg" alt="Logo" />
+            <!-- <h1 class="flex items-center justify-center p-3 font-medium text-white rounded-lg bg-brand-500 text-theme-sm hover:bg-brand-600 w-full">Template Simetri</h1> -->
+            <span class="logo" :class="sidebarToggle ? 'hidden' : ''">
+                <img class="dark:hidden" src="./assets/images/logo/logo-simetri.png" alt="Logo" />
                 <img
                     class="hidden dark:block"
-                    src="./assets/images/logo/logo-dark.svg"
+                    src="./assets/images/logo/logo-simetri.png"
                     alt="Logo" />
             </span>
 
             <img
                 class="logo-icon"
                 :class="sidebarToggle ? 'lg:block' : 'hidden'"
-                src="./assets/images/logo/logo-icon.svg"
-                alt="Logo" /> -->
+                src="./assets/images/logo/logo-simetri.png"
+                alt="Logo" />
         </a>
     </div>
     <!-- SIDEBAR HEADER -->

@@ -7,7 +7,7 @@
     <div>
         <div class="mx-auto w-full max-w-[460px] text-center">
             <a href="index.html" class="inline-block mb-6">
-                <img class="dark:hidden" src="./assets/images/logo/logo.svg" alt="Logo" />
+                <img class="dark:hidden" src="./assets/images/logo/logo-simetri.png" alt="Logo" />
                 <img
                     class="hidden dark:block"
                     src="./assets/images/logo/logo-dark.svg"
