@@ -551,13 +551,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'termsCondition' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Maintenance
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'termsCondition' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
