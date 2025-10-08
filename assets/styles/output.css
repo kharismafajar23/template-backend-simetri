@@ -2845,6 +2845,11 @@
       width: auto;
     }
   }
+  .sm\:max-w-\[160px\] {
+    @media (width >= 640px) {
+      max-width: 160px;
+    }
+  }
   .sm\:max-w-\[204px\] {
     @media (width >= 640px) {
       max-width: 204px;
