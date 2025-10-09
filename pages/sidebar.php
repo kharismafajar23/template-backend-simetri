@@ -970,7 +970,7 @@
                             </span>
 
                             <svg
-                                class="menu-item-arrow absolute right-2.5 top-1/2 -translate-y-1/2 stroke-current"
+                                class="menu-item-arrow absolute top-1/2 right-2.5 -translate-y-1/2 stroke-current"
                                 :class="[(selected === 'Authentication') ? 'menu-item-arrow-active' : 'menu-item-arrow-inactive', sidebarToggle ? 'lg:hidden' : '' ]"
                                 width="20"
                                 height="20"
@@ -988,25 +988,45 @@
 
                         <!-- Dropdown Menu Start -->
                         <div
-                            class="overflow-hidden transform translate"
+                            class="translate transform overflow-hidden"
                             :class="(selected === 'Authentication') ? 'block' :'hidden'">
                             <ul
                                 :class="sidebarToggle ? 'lg:hidden' : 'flex'"
-                                class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
+                                class="menu-dropdown mt-2 flex flex-col gap-1 pl-9">
                                 <li>
                                     <a
-                                        href="signin.html"
+                                        href="./pages/auth/signin.html"
                                         class="menu-dropdown-item group"
-                                        :class="page === 'signin' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        :class="page === 'signin' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
+                                        target="_blank">
                                         Sign In
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="signup.html"
+                                        href="./pages/auth/signup.html"
                                         class="menu-dropdown-item group"
-                                        :class="page === 'signup' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        :class="page === 'signup' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
+                                        target="_blank">
                                         Sign Up
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="./pages/auth/reset-password.html"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'resetPassword' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
+                                        target="_blank">
+                                        Reset Password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="./pages/auth/two-step-verification.html"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'twoStepVerification' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
+                                        target="_blank">
+                                        Two Step Verification
                                     </a>
                                 </li>
                             </ul>
