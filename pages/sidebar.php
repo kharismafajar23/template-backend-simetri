@@ -841,11 +841,11 @@
                     <li>
                         <a
                             href="#"
-                            @click.prevent="selected = (selected === 'UIElements' ? '':'UIElements')"
+                            @click.prevent="selected = (selected === 'UiElements' ? '':'UiElements')"
                             class="menu-item group"
-                            :class="(selected === 'UIElements') || (page === 'alerts' || page === 'avatars' || page === 'badge' || page === 'buttons' || page === 'buttonsGroup' || page === 'cards'|| page === 'carousel' || page === 'dropdowns' || page === 'images' || page === 'list' || page === 'modals' || page === 'videos') ? 'menu-item-active' : 'menu-item-inactive'">
+                            :class="(selected === 'UiElements') || (page === 'alerts' || page === 'avatars' || page === 'badge' || page === 'breadcrumb' || page === 'buttons' || page === 'buttonsGroup' || page === 'cards'|| page === 'carousel' || page === 'dropdowns' || page === 'images' || page === 'list' || page === 'modals' || page === 'notifications' || page === 'pagination' || page === 'popovers' || page === 'progress' || page === 'spinners' || page === 'tooltips' || page === 'videos') ? 'menu-item-active' : 'menu-item-inactive'">
                             <svg
-                                :class="(selected === 'UIElements') || (page === 'alerts' || page === 'avatars' || page === 'badge' || page === 'breadcrumb' || page === 'buttons' || page === 'buttonsGroup' || page === 'cards'|| page === 'carousel' || page === 'dropdowns' || page === 'images' || page === 'list' || page === 'modals' || page === 'notifications' || page === 'popovers' || page === 'progress' || page === 'spinners' || page === 'tooltips' || page === 'videos') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
+                                :class="(selected === 'UiElements') || (page === 'alerts' || page === 'avatars' || page === 'badge' || page === 'breadcrumb' || page === 'buttons' || page === 'buttonsGroup' || page === 'cards'|| page === 'carousel' || page === 'dropdowns' || page === 'images' || page === 'list' || page === 'modals' || page === 'notifications' || page === 'pagination' || page === 'popovers' || page === 'progress' || page === 'spinners' || page === 'tooltips' || page === 'videos') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -861,12 +861,12 @@
                             <span
                                 class="menu-item-text"
                                 :class="sidebarToggle ? 'lg:hidden' : ''">
-                                UI Elements
+                                Ui Elements
                             </span>
 
                             <svg
                                 class="menu-item-arrow absolute right-2.5 top-1/2 -translate-y-1/2 stroke-current"
-                                :class="[(selected === 'UIElements') ? 'menu-item-arrow-active' : 'menu-item-arrow-inactive', sidebarToggle ? 'lg:hidden' : '' ]"
+                                :class="[(selected === 'UiElements') ? 'menu-item-arrow-active' : 'menu-item-arrow-inactive', sidebarToggle ? 'lg:hidden' : '' ]"
                                 width="20"
                                 height="20"
                                 viewBox="0 0 20 20"
@@ -884,13 +884,13 @@
                         <!-- Dropdown Menu Start -->
                         <div
                             class="overflow-hidden transform translate"
-                            :class="(selected === 'UIElements') ? 'block' :'hidden'">
+                            :class="(selected === 'UiElements') ? 'block' :'hidden'">
                             <ul
                                 :class="sidebarToggle ? 'lg:hidden' : 'flex'"
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
                                     <a
-                                        href="alerts.html"
+                                        href="?page=alerts"
                                         class="menu-dropdown-item group"
                                         :class="page === 'alerts' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Alerts
@@ -898,7 +898,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="avatars.html"
+                                        href="?page=avatars"
                                         class="menu-dropdown-item group"
                                         :class="page === 'avatars' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Avatars
@@ -906,15 +906,23 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="badge.html"
+                                        href="?page=badge"
                                         class="menu-dropdown-item group"
                                         :class="page === 'badge' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
-                                        Badges
+                                        Badge
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="buttons.html"
+                                        href="?page=breadcrumb"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'breadcrumb' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Breadcrumb
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=buttons"
                                         class="menu-dropdown-item group"
                                         :class="page === 'buttons' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Buttons
@@ -922,18 +930,205 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="images.html"
+                                        href="?page=buttons-group"
                                         class="menu-dropdown-item group"
-                                        :class="page === 'images' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
-                                        Images
+                                        :class="page === 'buttonsGroup' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Buttons Group
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="videos.html"
+                                        href="?page=cards"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'cards' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Cards
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'cards' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=carousel"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'carousel' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Carousel
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'carousel' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=dropdowns"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'dropdowns' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Dropdowns
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'dropdowns' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=images"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'images' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Images
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'images' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=list"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'list' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        List
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'list' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=modals"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'modals' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Modals
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'modals' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=notifications"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'notifications' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Notifications
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'notifications' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=pagination"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'pagination' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Pagination
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'pagination' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=popovers"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'popovers' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Popovers
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'popovers' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=progress-bar"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'progress' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Progress Bars
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'progress' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=spinners"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'spinners' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Spinners
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'spinners' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=tooltips"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'tooltips' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Tooltips
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'tooltips' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=videos"
                                         class="menu-dropdown-item group"
                                         :class="page === 'videos' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Videos
+                                        <span class="absolute flex items-center gap-1 right-3">
+                                            <span
+                                                class="menu-dropdown-badge"
+                                                :class="page === 'videos' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
+                                                Pro
+                                            </span>
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
