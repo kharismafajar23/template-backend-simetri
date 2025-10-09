@@ -809,7 +809,7 @@
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
                                     <a
-                                        href="line-chart.html"
+                                        href="?page=line-chart"
                                         class="menu-dropdown-item group"
                                         :class="page === 'lineChart' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Line Chart
@@ -817,10 +817,18 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="bar-chart.html"
+                                        href="?page=bar-chart"
                                         class="menu-dropdown-item group"
                                         :class="page === 'barChart' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Bar Chart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="?page=pie-chart"
+                                        class="menu-dropdown-item group"
+                                        :class="page === 'pieChart' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        Pie Chart
                                     </a>
                                 </li>
                             </ul>
