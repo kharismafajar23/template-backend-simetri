@@ -1,6 +1,7 @@
 <aside
     :class="sidebarToggle ? 'translate-x-0 lg:w-[90px]' : '-translate-x-full'"
-    class="sidebar fixed left-0 top-0 z-9999 flex h-screen w-[290px] flex-col overflow-y-hidden border-r border-gray-200 bg-white px-5 dark:border-gray-800 dark:bg-black lg:static lg:translate-x-0">
+    class="sidebar fixed left-0 top-0 z-9999 flex h-screen w-[290px] flex-col overflow-y-hidden border-r border-gray-200 bg-white px-5 duration-300 ease-linear dark:border-gray-800 dark:bg-black lg:static lg:translate-x-0"
+    @click.outside="sidebarToggle = false">
     <!-- SIDEBAR HEADER -->
     <div
         :class="sidebarToggle ? 'justify-center' : 'justify-between'"
@@ -942,13 +943,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'cards' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Cards
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'cards' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -957,13 +951,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'carousel' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Carousel
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'carousel' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -972,13 +959,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'dropdowns' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Dropdowns
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'dropdowns' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -987,13 +967,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'images' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Images
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'images' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1002,13 +975,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'list' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         List
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'list' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1017,13 +983,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'modals' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Modals
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'modals' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1032,13 +991,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'notifications' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Notifications
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'notifications' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1047,13 +999,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'pagination' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Pagination
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'pagination' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1062,13 +1007,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'popovers' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Popovers
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'popovers' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1077,13 +1015,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'progress' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Progress Bars
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'progress' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1092,13 +1023,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'spinners' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Spinners
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'spinners' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1107,13 +1031,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'tooltips' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Tooltips
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'tooltips' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -1122,13 +1039,6 @@
                                         class="menu-dropdown-item group"
                                         :class="page === 'videos' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
                                         Videos
-                                        <span class="absolute flex items-center gap-1 right-3">
-                                            <span
-                                                class="menu-dropdown-badge"
-                                                :class="page === 'videos' ? 'menu-dropdown-badge-active' : 'menu-dropdown-badge-inactive'">
-                                                Pro
-                                            </span>
-                                        </span>
                                     </a>
                                 </li>
                             </ul>

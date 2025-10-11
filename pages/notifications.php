@@ -1,4 +1,6 @@
-<main data-halaman-aktif="badge" x-data="{pageName: `Badge`, breadcrumbs : ['UI Elements', 'Badge']}">
+<main
+  data-halaman-aktif="notifications"
+  x-data="{pageName: `Notifications`, breadcrumbs : ['UI Elements', 'Notifications']}">
   <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
     <!-- Breadcrumb Start -->
     <div>
@@ -12,12 +14,12 @@
         <div class="card-header">
           <h3
             class="card-title">
-            With Light Background
+            Announcement Bar
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-01.php' ?>
+          <?php include './pages/partials/notification/notification-01.php' ?>
         </div>
       </div>
 
@@ -26,12 +28,12 @@
         <div class="card-header">
           <h3
             class="card-title">
-            With Solid Background
+            Toast Notification
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-02.php' ?>
+          <?php include './pages/partials/notification/notification-02.php' ?>
         </div>
       </div>
 
@@ -40,12 +42,12 @@
         <div class="card-header">
           <h3
             class="card-title">
-            Light Background with Left Icon
+            Success Notification
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-03.php' ?>
+          <?php include './pages/partials/notification/notification-03.php' ?>
         </div>
       </div>
 
@@ -54,12 +56,12 @@
         <div class="card-header">
           <h3
             class="card-title">
-            Solid Background with Left Icon
+            Info Notification
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-04.php' ?>
+          <?php include './pages/partials/notification/notification-04.php' ?>
         </div>
       </div>
 
@@ -68,12 +70,12 @@
         <div class="card-header">
           <h3
             class="card-title">
-            Light Background with Right Icon
+            Warning Notification
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-05.php' ?>
+          <?php include './pages/partials/notification/notification-05.php' ?>
         </div>
       </div>
 
@@ -82,12 +84,12 @@
         <div class="card-header">
           <h3
             class="card-title">
-            Solid Background with Right Icon
+            Error Notification
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-06.php' ?>
+          <?php include './pages/partials/notification/notification-06.php' ?>
         </div>
       </div>
     </div>

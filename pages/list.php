@@ -1,4 +1,6 @@
-<main data-halaman-aktif="badge" x-data="{pageName: `Badge`, breadcrumbs : ['UI Elements', 'Badge']}">
+<main
+  data-halaman-aktif="list"
+  x-data="{pageName: `List`, breadcrumbs : ['UI Elements', 'List']}">
   <div class="mx-auto max-w-(--breakpoint-2xl) p-4 md:p-6">
     <!-- Breadcrumb Start -->
     <div>
@@ -6,18 +8,60 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <div class="space-y-5 sm:space-y-6">
+    <div class="grid grid-cols-1 gap-5 xl:grid-cols-2 xl:gap-6">
       <div
-        class="card">
+        class="card sm:col-span-1">
         <div class="card-header">
           <h3
             class="card-title">
-            With Light Background
+            Unordered List
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-01.php' ?>
+          <?php include './pages/partials/list/list-01.php' ?>
+        </div>
+      </div>
+
+      <div
+        class="card sm:col-span-1">
+        <div class="card-header">
+          <h3
+            class="card-title">
+            Ordered List
+          </h3>
+        </div>
+        <div
+          class="card-body">
+          <?php include './pages/partials/list/list-02.php' ?>
+        </div>
+      </div>
+
+      <div
+        class="card sm:col-span-1">
+        <div class="card-header">
+          <h3
+            class="card-title">
+            List with button
+          </h3>
+        </div>
+        <div
+          class="card-body">
+          <?php include './pages/partials/list/list-03.php' ?>
+        </div>
+      </div>
+
+      <div
+        class="card sm:col-span-1">
+        <div class="card-header">
+          <h3
+            class="card-title">
+            List with Icon
+          </h3>
+        </div>
+        <div
+          class="card-body">
+          <?php include './pages/partials/list/list-04.php' ?>
         </div>
       </div>
 
@@ -26,68 +70,40 @@
         <div class="card-header">
           <h3
             class="card-title">
-            With Solid Background
+            Horizontal list
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-02.php' ?>
+          <?php include './pages/partials/list/list-05.php' ?>
         </div>
       </div>
 
       <div
-        class="card">
+        class="card sm:col-span-1">
         <div class="card-header">
           <h3
             class="card-title">
-            Light Background with Left Icon
+            List with checkbox
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-03.php' ?>
+          <?php include './pages/partials/list/list-06.php' ?>
         </div>
       </div>
 
       <div
-        class="card">
+        class="card sm:col-span-1">
         <div class="card-header">
           <h3
             class="card-title">
-            Solid Background with Left Icon
+            List with radio
           </h3>
         </div>
         <div
           class="card-body">
-          <?php include './pages/partials/badge/badge-04.php' ?>
-        </div>
-      </div>
-
-      <div
-        class="card">
-        <div class="card-header">
-          <h3
-            class="card-title">
-            Light Background with Right Icon
-          </h3>
-        </div>
-        <div
-          class="card-body">
-          <?php include './pages/partials/badge/badge-05.php' ?>
-        </div>
-      </div>
-
-      <div
-        class="card">
-        <div class="card-header">
-          <h3
-            class="card-title">
-            Solid Background with Right Icon
-          </h3>
-        </div>
-        <div
-          class="card-body">
-          <?php include './pages/partials/badge/badge-06.php' ?>
+          <?php include './pages/partials/list/list-07.php' ?>
         </div>
       </div>
     </div>
