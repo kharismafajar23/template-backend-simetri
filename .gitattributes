@@ -1,0 +1,13 @@
+# Force GitHub Linguist to detect PHP correctly
+*.php linguist-language=PHP
+
+# Optional: pastikan JavaScript, CSS, dan HTML dikenali dengan benar
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+
+# (Opsional) abaikan file build, dependencies, dan minified agar tidak mempengaruhi persentase
+node_modules/* linguist-vendored
+vendor/* linguist-vendored
+dist/* linguist-vendored
+build/* linguist-vendored
