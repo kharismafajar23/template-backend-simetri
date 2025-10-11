@@ -15,6 +15,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./assets/styles/output.css">
         <title>Login</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     </head>
 
     <body
@@ -224,10 +227,10 @@
                         <include src="./partials/common-grid-shape.html"></include>
                         <div class="flex flex-col items-center max-w-xs">
                             <a href="index.html" class="block mb-4">
-                                <img src="./assets/images/logo/auth-logo.svg" alt="Logo" />
+                                <img src="./assets/images/logo/logo-white.png" alt="Logo" />
                             </a>
                             <p class="text-center text-gray-400 dark:text-white/60">
-                                Free and Open-Source Tailwind CSS Admin Dashboard Template
+                                Template admin Simetri. Have a nice day
                             </p>
                         </div>
                     </div>

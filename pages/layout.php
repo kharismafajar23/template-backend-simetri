@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $nama_aplikasi ?></title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
     <!-- Style -->
     <link rel="stylesheet" href="./assets/scripts/main.css">
     <link rel="stylesheet" href="./assets/styles/output.css">
