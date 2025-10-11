@@ -29,6 +29,7 @@
         <?php include 'sidebar.php'; ?>
         <div
             class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+            <?php include './pages/partials/overlay.php'; ?>
             <?php include 'header.php'; ?>
 
             <?php if (!isset($_GET['page']))
